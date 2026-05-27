@@ -1,0 +1,166 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+  color: #1d2b29;
+  background: #f5fbf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #eef9f3 0%, #ffffff 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.hero {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: radial-gradient(circle at top, rgba(64, 151, 122, 0.18), transparent 48%), #d4f1e0;
+}
+
+.hero-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: #266a53;
+  color: #f8fbf8;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  letter-spacing: -0.04em;
+}
+
+p {
+  margin: 1.25rem 0 0;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #315848;
+  font-size: 1.05rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.95rem 1.8rem;
+  border-radius: 999px;
+  background: #1f5e48;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  background: #154837;
+}
+
+.section {
+  padding: 3rem 1.5rem;
+}
+
+.section-intro,
+.section-dicas {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.section-grid article,
+.practices-list article {
+  background: #ffffff;
+  border: 1px solid rgba(122, 171, 146, 0.18);
+  border-radius: 24px;
+  padding: 1.8rem;
+  box-shadow: 0 18px 48px rgba(71, 107, 99, 0.07);
+}
+
+.section-header {
+  max-width: 760px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.section-header h2,
+.section-dicas h2,
+.section-intro h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.practices-list {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.section-dicas ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.section-dicas li {
+  background: #e8f7ee;
+  border-left: 4px solid #266a53;
+  padding: 1rem 1.3rem;
+  border-radius: 12px;
+}
+
+.footer {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: #eaf7f1;
+  color: #225f4c;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
